@@ -1,0 +1,65 @@
+body
+{
+    background-size: cover;
+}
+
+.heading
+{
+    width: 100%;
+    margin: 0;
+    font-size: 23px;
+}
+
+.heading span
+{
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.speed
+{
+    float: left;
+}
+
+.gif
+{
+    width: 200px;
+    border-radius: 100px;
+}
+
+.speed_value
+{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.volume
+{
+    float: right;
+}
+
+.volume_value
+{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.playBtn
+{
+    width: 130px;
+    font-size: 25px;
+}
+
+.stopBtn
+{
+    width: 130px;
+    font-size: 25px;
+}
+
+
+canvas
+{
+    border: 5px solid white;
+    border-radius: 25px;
+}
