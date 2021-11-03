@@ -1,4 +1,6 @@
 song ="";
+scoreLeftWrist = 0;
+scoreRightWrist = 0;
 leftWristX = 0;
 leftWristY = 0;
 rightWristX = 0;
@@ -27,8 +29,8 @@ function gotPoses(results)
     if (results.length > 0)
     {
         console.log(results);
-        scoreleft = results[0].pose.keypoints[9].score;
-        console.log("scoreleftWristX = " + scoreleft);
+        scoreLeftWrist = results[0].pose.keypoints[9].score;
+        console.log("scoreleftWristX = " + scoreLeftWrist);
 
         leftWristX = results[0].pose.leftWrist.x;
         leftWristY = results[0].pose.leftWrist.y;
@@ -47,7 +49,7 @@ function draw()
     fill("#FF0000");
     stroke("#FF0000");
 
-    if(scoreleft > 0.2)
+    if(scoreLeftWrist > 0.2)
     {
      circle(leftWristX, leftWristY, 20);
      NumleftX = Number(leftWristY);
